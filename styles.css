@@ -1,0 +1,81 @@
+body{
+    margin: o;
+    padding: 0;
+}
+/* main body */
+.container{
+    width: 100%;
+    height: 100vh;
+    background:  #e3f9ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+
+}
+ .calculator{
+    background:  #3a4452;
+    padding: 25px;
+    border-radius: 20px;
+
+ }
+ /* calculator name/ S.No */
+ .cal{
+  color:rgba(85, 228, 221, 0.534);
+  font-weight: bold;
+  font-style: italic;
+
+ }
+ .calculator form input{
+    border: 0;
+    font-size: 25px;
+    outline: 0;
+    width: 50px;
+    height: 60px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: -2px -3px 27px 9px rgba(0,0,0,0.8);
+-webkit-box-shadow: -2px -3px 27px 9px rgba(0,0,0,0.8);
+-moz-box-shadow: -2px -3px 27px 9px rgba(0,0,0,0.8);
+    background: transparent;
+    margin: 10px;
+ }
+ /* form input.screen */
+#screen{
+display: flex;
+justify-content: flex-end;
+margin: 21px;
+ }
+#screen input{
+   flex:1;
+   text-align: right;
+   font-size: 40px;
+   box-shadow: none;
+   background-color: rgba(38, 42, 46, 0.5);
+   color: rgb(243, 236, 236);
+ }
+ #Clear{
+   width:124px;
+   color: aquamarine;
+ }
+ #Backspace{
+   width:130px;
+   color: aquamarine;
+ }
+ #clear-All{
+   width:124px;
+   color: aquamarine;
+ }
+ #blue1{
+  color: aquamarine;
+ }
+ #blue2{
+  color: aquamarine;
+ }
+ #blue3{
+  color: aquamarine;
+ }
+ #blue4{
+  color: aquamarine;
+ }

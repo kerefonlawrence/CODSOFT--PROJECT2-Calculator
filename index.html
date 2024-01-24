@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+       <div class="calculator">
+         <p class="cal">CAL - KF0173</p>
+         
+         <form>
+            <div id="screen">
+                <input type="text" name="screen">
+            </div>
+            <div>
+               <input type="button" value="Clear" id="Clear" onclick="screen.value =''"> 
+               <input type="button" value="Backspace" id="Backspace" onclick="screen.value = screen.value.toString().slice(0,-1)">
+               <input type="button" value="On/Off" id="clear-All"onclick="screen.value =''">  
+            </div>
+            <div>
+                <input type="button" value="MC" id="blue1" onclick="screen.value =''" > 
+                <input type="button" value="7" onclick="screen.value +='7'"> 
+                <input type="button" value="8" onclick="screen.value +='8'">
+                <input type="button" value="9" onclick="screen.value +='9'">  
+                <input type="button" value="÷" onclick="screen.value +='/'"> 
+                <input type="button" value="Sqrt" onclick="screen.value=Math.sqrt(screen.value)"> 
+             </div>
+             <div>
+                <input type="button" value="MR" id="blue2"> 
+                <input type="button" value="4" onclick="screen.value +='4'"> 
+                <input type="button" value="5" onclick="screen.value +='5'">
+                <input type="button" value="6" onclick="screen.value +='6'">  
+                <input type="button" value="*" onclick="screen.value +='*'"> 
+                <input type="button" value="χ 2" onclick="screen.value=Math.pow(screen.value,screen.value)"> 
+             </div>
+             <div>
+                <input type="button" value="MS" id="blue3"> 
+                <input type="button" value="1" onclick="screen.value +='1'"> 
+                <input type="button" value="2" onclick="screen.value +='2'">
+                <input type="button" value="3" onclick="screen.value +='3'">  
+                <input type="button" value="-" onclick="screen.value +='-'"> 
+                <input type="button" value="1/x" onclick="screen.value=eval(1/screen.value)"> 
+             </div>
+             <div>
+                <input type="button" value="M+" id="blue4"> 
+                <input type="button" value="0" onclick="screen.value +='0'"> 
+                <input type="button" value="00" onclick="screen.value +='00'">
+                <input type="button" value="." onclick="screen.value +='.'">  
+                <input type="button" value="+" onclick="screen.value +='+'"> 
+                <input type="button" value="=" onclick="screen.value = eval(screen.value)"> 
+             </div>
+         </form>
+       </div>
+    </div>
+    
+</body>
+</html>
